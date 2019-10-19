@@ -37,16 +37,48 @@ body {
   background-color: #000;
 }
 
-.aguja-segundos {
+/* .aguja-segundos {
+	position: absolute;
+	top: 50%;
+	// left: 49.5%;
+	width: 1%;
+	height: 35%;
+	z-index: 1;
+	background-color: red;
+	transform-origin: center top;
+	border-radius: 0 0 50% 50%;
+	&:before {
+        content: "";
+		height: 35%;
+		width: 150%;
+		display: block;
+		position: absolute;
+		top: -34%;
+		left: -25%;
+		background-color: red;
+	}
+} */
+.aguja-minutos {
   position: absolute;
   top: 50%;
-  width: 1%;
-  height: 35%;
-  z-index: 1;
-  background-color: red;
+  width: 1.2%;
+  height: 39%;
+  background-color: black;
   -webkit-transform-origin: center top;
           transform-origin: center top;
-  border-radius: 0 0 50% 50%;
+}
+
+.aguja-horas {
+  position: absolute;
+  top: 50%;
+  left: 49.35%;
+  width: 1.5%;
+  height: 25%;
+  background-color: black;
+  -webkit-transform-origin: center top;
+          transform-origin: center top;
+  -webkit-animation: rotar 6s infinite linear;
+          animation: rotar 6s infinite linear;
 }
 
 @-webkit-keyframes rotar {
